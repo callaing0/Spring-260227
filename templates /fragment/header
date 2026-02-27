@@ -5,13 +5,13 @@
         <div class="LogoBox w-1/6">
             <img th:src="@{/image/images.png}" alt="로고">
         </div>
-        <ul class="menuList flex">
+        <ul class="menuList flex w-4/6 justify-between text-2xl font-bold">
             <li class="menu"><a th:href="@{/}">HOME</a></li>
             <li class="menu"><a href="#">경매</a></li>
             <li class="menu"><a href="#">예정</a></li>
             <li class="menu"><a href="#">접수</a></li>	
         </ul>
-        <div class="LoginBox">
+        <div class="LoginBox w-1/6">
             <a th:href="@{/}">로그인</a>
         </div>
     </nav>
