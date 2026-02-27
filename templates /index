@@ -10,7 +10,7 @@
 </head>
 
 <body>
-		<div id="wrop" class="">
+		<div id="wrop" class="w-[1200px] mx-outo">
 			<div th:replace="~{fragments/header :: header}"></div>
 			<main id="main">
 
