@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<header id="header" th:fragment="header">
-    <nav id="nav" class="flex items-conter">
-        <div class="LogoBox w-1/6">
-            <img th:src="@{/image/images.png}" alt="로고">
+<header id="header" th:fragment="header" class="w-full bg-white">
+    <nav id="nav" class="flex items-center h-24 px-20">
+        
+        <div class="LogoBox w-1/6 flex items-center">
+            <a th:href="@{/}" class="hover:opacity-80 transition-opacity">
+                <img th:src="@{/image/images.png}" alt="로고" 
+                     class="h-14 w-auto object-contain">
+            </a>
         </div>
-        <ul class="menuList flex w-4/6 justify-between text-2xl font-bold">
-            <li class="menu"><a th:href="@{/}">HOME</a></li>
-            <li class="menu"><a href="#">경매</a></li>
-            <li class="menu"><a href="#">예정</a></li>
-            <li class="menu"><a href="#">접수</a></li>	
+
+        <ul class="menuList flex w-4/6 justify-between items-center px-24 text-2xl font-bold text-gray-800">
+            <li class="menu">
+                <a th:href="@{/}" class="hover:text-blue-600 transition-colors">HOME</a>
+            </li>
+            <li class="menu"><a href="#" class="hover:text-blue-600 transition-colors">경매</a></li>
+            <li class="menu"><a href="#" class="hover:text-blue-600 transition-colors">예정</a></li>
+            <li class="menu"><a href="#" class="hover:text-blue-600 transition-colors">접수</a></li>	
         </ul>
-        <div class="LoginBox w-1/6">
-            <a th:href="@{/}">로그인</a>
+
+        <div class="LoginBox w-1/6 flex justify-end">
+            <a th:href="@{/signIn}"
+               class="inline-block w-32 text-center bg-blue-600
+                      text-white py-2 rounded-lg font-semibold hover:bg-blue-700 transition-all shadow-sm">
+               로그인
+            </a>
         </div>
     </nav>
 </header>
